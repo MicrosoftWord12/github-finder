@@ -3,12 +3,11 @@ import React, { Component } from 'react';
 
 class App extends Component {
 	render() {
-		return (
-			<div className='App'>
-				<h1>Hello From react</h1>
-				<h2>GoodBye</h2>
-			</div>
-		);
+		const name = 'Jacob';
+		const loading = false;
+		const showName = true;
+
+		return <div className='App'>{loading ? <h4>loading</h4> : <h1>Hello {showName && name}</h1>}</div>;
 	}
 }
 
