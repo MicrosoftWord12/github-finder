@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 export class Navbar extends Component {
 	static defaultProps = {
@@ -7,9 +7,9 @@ export class Navbar extends Component {
 		icon: 'fab fa-github',
 	};
 
-	static PropTypes = {
-		title: PropTypes.string.isRequired,
-		icon: PropTypes.string.isRequired,
+	static propTypes = {
+		title: propTypes.string.isRequired,
+		icon: propTypes.string.isRequired,
 	};
 
 	render() {
